@@ -83,6 +83,9 @@ function checkAnswer(currentLevel){
 function startOver(){
     setTimeout(function(){
         level--;
+        
+        if(level === -1)level = 0;
+
         alert("Your Score is " + level);
         level = 0;
         gamePattern = [];
