@@ -1,27 +1,31 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: rgb(31, 9, 9);
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
   color: #FEF2BF;
 }
 
 .container {
   display: block;
-  width: 50%;
-  margin: auto;
-
+  /* background: black; */
 }
 
 .btn {
-  margin: 25px;
+  box-sizing: border-box;
+  margin: 1rem;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 10rem;
+  width: 10rem;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -50,4 +54,34 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+
+/* Media Queries for tablet */
+@media screen and (max-width : 1024px){
+
+  body{
+    min-height: 100vh;
+  }
+  .container {
+      width : 86%;
+      padding-bottom: 18rem;
+  } 
+  .btn{
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+
+
+/* Media Queries for mobile */
+@media screen and (max-width : 600px){
+  .container {
+      width : 90%;
+  } 
+  .btn{
+    width: 18rem;
+    height: 18rem;
+  }
 }
