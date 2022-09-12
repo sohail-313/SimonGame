@@ -15,6 +15,19 @@ body {
   color: #FEF2BF;
 }
 
+button{
+  padding: 0.5rem 1rem;
+  color: pink;
+  background: transparent;
+  border: 2px solid pink;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  outline: none;
+} 
+
+button:hover{
+  background: teal;
+}
 .container {
   display: block;
   /* background: black; */

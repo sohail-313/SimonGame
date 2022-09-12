@@ -7,13 +7,29 @@ var userClickedPattern = [];
 var started = false; 
 var level = 0;
 
-$(document).keypress(function(){
+function keyPress(){
     if(!started){
         $("#level-title").text("Level " + level)
         nextSequence();
         started = true;
     }
-});
+}
+// $(document).keypress(function(){
+//     if(!started){
+//         $("#level-title").text("Level " + level)
+//         nextSequence();
+//         started = true;
+//     }
+// });
+
+// $(document).load(function(){
+//     console.log("hello");
+//     if(!started){
+//         $("#level-title").text("Level " + level)
+//         nextSequence();
+//         started = true;
+//     }
+// });
 
 $(".btn").click(function(event) {
     // var userChosenColour = event.target.id;
